@@ -32,15 +32,16 @@ class RecordsController < ApplicationController
     # @user = @record.user_id
 
     if @record.update(record_params)
-      # redirect_to controller: :users
+      redirect_to controller: 'records', action: 'index'
     else
       render :edit
     end
+
   end
 
   private
 
   def record_params
-    params.require(:record).permit(:genre, :artist, )
+    params.require(:record).permit(:genre, :artist, :album, :year, :quantity)
   end
 end
