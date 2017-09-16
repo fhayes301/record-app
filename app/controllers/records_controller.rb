@@ -12,7 +12,7 @@ class RecordsController < ApplicationController
     @record = Record.new(record_params)
 
     if @record.save
-      redirect_to @record
+      redirect_to records_path
     else
       render 'new'
     end
@@ -42,6 +42,6 @@ class RecordsController < ApplicationController
   private
 
   def record_params
-    params.require(:record).permit(:genre, :artist, :album, :year, :quantity)
+    params.require(:record).permit(:user_id, :genre, :artist, :album, :year, :quantity)
   end
 end
