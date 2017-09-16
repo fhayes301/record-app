@@ -32,11 +32,17 @@ class RecordsController < ApplicationController
     # @user = @record.user_id
 
     if @record.update(record_params)
-      redirect_to controller: 'records', action: 'index'
+      redirect_to records_path
     else
       render :edit
     end
 
+  end
+
+  def destroy
+    @record = Record.find(params[:id])
+    @record.destroy
+    redirect_to records_path
   end
 
   private
