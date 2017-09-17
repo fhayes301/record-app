@@ -50,4 +50,5 @@ class RecordsController < ApplicationController
   def record_params
     params.require(:record).permit(:user_id, :genre, :artist, :album, :year, :quantity)
   end
+
 end
