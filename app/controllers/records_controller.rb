@@ -2,6 +2,11 @@ class RecordsController < ApplicationController
 
   def index
     @records = Record.all
+    if params[:search]
+      @records = Record.search(params[:search]).order("created_at DESC")
+    else
+      @records = Record.all.order('created_at DESC')
+    end
   end
 
   def new
@@ -28,9 +33,6 @@ class RecordsController < ApplicationController
 
   def update
     @record = Record.find(params[:id])
-    #for when we add user auth
-    # @user = @record.user_id
-
     if @record.update(record_params)
       redirect_to records_path
     else
