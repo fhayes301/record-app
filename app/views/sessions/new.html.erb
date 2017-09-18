@@ -1,0 +1,14 @@
+<h2>Login</h2>
+
+<div class="login form-title">
+  <%=form_for(:session, url: login_path, :html => {class: 'form-container'})  do |f| %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email, :class => 'form-field' %>
+  <br>
+  <%= f.label :password %>
+  <%= f.password_field :password, :class => 'form-field' %>
+
+  <%= f.submit "Log In", :class => 'submit-button' %>
+  <% end %>
+</div>

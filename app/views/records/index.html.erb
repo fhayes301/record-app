@@ -1,0 +1,30 @@
+<br>
+  <%= form_tag(records_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Records" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+<br>
+  <%= link_to "Add a new record!", new_record_path %>
+
+<br><br>
+
+
+<% if @records.present? %>
+  <table class="sortable">
+    <tr>
+      <th></th>
+      <th>Genre</th>
+      <th>Artist</th>
+      <th>Album</th>
+      <th>Year</th>
+      <th>Quantity</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <%= render @records %>
+  </table>
+<% else %>
+ <p> Sorry, that record doesn't seem to be in the list! </p>
+<% end %>
+</div>
