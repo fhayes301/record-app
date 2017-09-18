@@ -8,19 +8,22 @@
 
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <script src="sorttable.js"></script>
-    <nav>
-      <a class="active" href="/">Home</a> |
-      <% if logged_in? %>
-        <a href="/users/<%= current_user.id %>">Profile</a> | 
-        <a href="/logout">Logout</a>
-      <% else %>
-        <a href="/login">Login</a>
-      <% end %>
-    </nav>
+    <header>
+      <nav>
+        <a class="active" href="/">Home</a> |
+        <% if logged_in? %>
+          
+          <a href="/logout">Logout</a>
+        <% else %>
+          <a href="/login">Login</a>
+        <% end %>
+      </nav>
+    </header>
   </head>
 
   <body>
-
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

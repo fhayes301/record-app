@@ -1,20 +1,16 @@
-<h1> Records: </h1>
-
-
-<%= form_tag(records_path, :method => "get", id: "search-form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Search Records" %>
-  <%= submit_tag "Search" %>
-<% end %>
-
-
-
-
 <br>
+  <%= form_tag(records_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Records" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+<br>
+  <%= link_to "Add a new record!", new_record_path %>
 
-<h3><%= link_to "New Record", new_record_path %></h3>
+<br><br>
+
+
 <% if @records.present? %>
   <table class="sortable">
-
     <tr>
       <th></th>
       <th>Genre</th>
@@ -31,4 +27,4 @@
 <% else %>
  <p> Sorry, that record doesn't seem to be in the list! </p>
 <% end %>
-<br>
+</div>
