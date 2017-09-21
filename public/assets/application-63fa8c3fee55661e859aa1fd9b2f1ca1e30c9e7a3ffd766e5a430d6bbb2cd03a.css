@@ -13,9 +13,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- *= require_tree .
- *= require_self
+
+
  */
+
 
 body, header {
    margin-left: 20px;
@@ -106,17 +107,10 @@ td {
 .form-container {
    border: 1px solid #536c8d;
    background: #4f8b89;
-   background: -webkit-gradient(linear, left top, left bottom, from(#62a07b), to(#4f8b89));
-   background: -webkit-linear-gradient(top, #62a07b, #4f8b89);
-   background: -moz-linear-gradient(top, #62a07b, #4f8b89);
-   background: -ms-linear-gradient(top, #62a07b, #4f8b89);
    background: -o-linear-gradient(top, #62a07b, #4f8b89);
    background-image: -ms-linear-gradient(top, #62a07b 0%, #4f8b89 100%);
-   -webkit-border-radius: 6px;
-   -moz-border-radius: 6px;
    border-radius: 6px;
    -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
-   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
    box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
    font-family: 'Helvetica Neue',Helvetica,sans-serif;
    text-decoration: none;
@@ -128,12 +122,9 @@ td {
 .form-field {
    border: 1px solid #ffffff;
    background: #ffffff;
-   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
    border-radius: 4px;
    color: #b8b1aa;
    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
    padding:8px;
    margin-bottom:20px;
@@ -177,10 +168,6 @@ td {
    border: 0px solid #447314;
    text-shadow: #31540c 0 1px 0;
    background: #6aa436;
-   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
-   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
-   background: -moz-linear-gradient(top, #8dc059, #6aa436);
-   background: -ms-linear-gradient(top, #8dc059, #6aa436);
    background: -o-linear-gradient(top, #8dc059, #6aa436);
    background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
    color: #fff;
@@ -189,10 +176,6 @@ td {
    text-shadow: #31540c 0 1px 0;
    border: 0px solid #447314;
    background: #8dc059;
-   background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#6aa436));
-   background: -webkit-linear-gradient(top, #6aa436, #8dc059);
-   background: -moz-linear-gradient(top, #6aa436, #8dc059);
-   background: -ms-linear-gradient(top, #6aa436, #8dc059);
    background: -o-linear-gradient(top, #6aa436, #8dc059);
    background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
    color: #fff;
