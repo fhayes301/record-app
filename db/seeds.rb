@@ -18,6 +18,7 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 def empty_year(data)
   if data == "x"
     "-"
+    p data
   else
     data
   end
