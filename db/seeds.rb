@@ -2,10 +2,11 @@ require 'csv'
 
 User.delete_all
 Record.delete_all
+Song.delete_all
 
 user = {
   name: "Jeff",
-  email: "Jeff@mail.com",
+  email: "jeffrey.j.giuffrida@gmail.com",
   password: "password"
 }
 
@@ -16,7 +17,7 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 
 def empty_year(data)
   if data == "x"
-    "tbd"
+    0
   else
     data
   end
@@ -33,5 +34,4 @@ csv.each do |row|
     quantity: row[4]
   }
   Record.create(record)
-
 end
