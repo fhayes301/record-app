@@ -6,10 +6,11 @@
   <td><%= record.year %></td>
   <td><%= record.quantity %></td>
   <% if logged_in? %>
-    <td><%= button_to "Show", record_songs_path(record), method: :get %> </td>
-    <td><%= button_to "Edit", edit_record_path(record), method: :get %></td>
+    <td><%= button_to "Show", record_songs_path(record), method: :get, class: "submit-button" %> </td>
+    <td><%= button_to "Edit", edit_record_path(record), method: :get, class: "submit-button" %></td>
     <td><%= button_to "Delete", record_path(record),
             method: :delete,
-            data: { confirm: 'Are you sure?' } %> </td>
+            data: { confirm: 'Are you sure?' },
+            class: "submit-button" %> </td>
   <% end %>
 </tr>
