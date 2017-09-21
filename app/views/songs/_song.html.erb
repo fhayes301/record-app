@@ -1,0 +1,11 @@
+<tr>
+  <td></td>
+  <td><%= song.title %></td>
+  <% if logged_in? %>
+    <td><%= button_to "Edit", edit_song_path(song), method: :get, class: "submit-button" %></td>
+    <td><%= button_to "Delete", song_path(song),
+            method: :delete,
+            data: { confirm: 'Are you sure?' },
+            class: "submit-button" %> </td>
+  <% end %>
+</tr>
