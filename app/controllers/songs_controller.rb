@@ -4,6 +4,8 @@ class SongsController < ApplicationController
     @song = @record.songs
   end
 
+  def show
+  end
 
   def new
     @record = Record.find(params[:record_id])
@@ -23,6 +25,7 @@ class SongsController < ApplicationController
 
   def edit
     @record = Record.find(params[:record_id])
+    @song = Song.find(params[:id])
   end
 
   def update

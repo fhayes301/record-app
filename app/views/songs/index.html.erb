@@ -1,0 +1,28 @@
+<h1> About this record: </h1>
+<p><em> Genre: </em><%= @record.genre %></p>
+<p> <em>Artist:</em> <%= @record.artist %> </p>
+<p> <em>Album:</em> <%= @record.album %></p>
+<p> <em>Year:</em> <%= @record.year %> </p>
+<p> <em>Quantity:</em> <%= @record.quantity %> </p>
+
+<% if logged_in? %>
+  <%= button_to "ADD A SONG", new_record_song_path(@record), method: :get %>
+<% end %>
+
+<% if @song.present? %>
+<h3> Record Songs: <h3>
+<div style = "overflow-x:auto;">
+  <table class="sortable">
+    <tr>
+      <th></th>
+      <th>Title</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+      <%= render @song %>
+  </table>
+<% else %>
+  <br>
+  <em> No songs yet... </em>
+<% end %>

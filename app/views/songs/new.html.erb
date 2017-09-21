@@ -1,0 +1,9 @@
+<h3> Add a song </h3>
+
+<%= form_for([@record, @song], :html => {class: 'form-container'}) do |f| %>
+  <%= f.label       :title, :class => 'form-title' %>
+  <%= f.text_field  :title, :class => 'form-field'%>
+  <br>
+  <%= f.hidden_field  :record_id, :value => @record_id %>
+  <%= f.submit "Add the Song", :class => 'submit-button' %>
+<% end %>

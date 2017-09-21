@@ -1,0 +1,13 @@
+<% p "$$$$$$$$$$$$$" %>
+<% p params%>
+<% p "$$$$$$" %>
+<tr>
+  <td></td>
+  <td><%= song.title %></td>
+  <% if logged_in? %>
+    <td><%= button_to "Edit", edit_record_song_path(@record, song), method: :get %></td>
+    <td><%= button_to "Delete", record_song_path(@record, song),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %> </td>
+  <% end %>
+</tr>
