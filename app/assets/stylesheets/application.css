@@ -87,6 +87,10 @@ h1, h2, h3 {
 
 tr:nth-child(even) {background-color: #f2f2f2}
 
+td {
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
 .add-thing {
   background-color: #9d9394; /* Green */
   border: none;
@@ -146,6 +150,8 @@ tr:nth-child(even) {background-color: #f2f2f2}
    font-weight:bold;
    text-align:center;
     }
+
+
 .form-title {
    margin-bottom:10px;
    color: #062e63;
