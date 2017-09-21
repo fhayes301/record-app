@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :records
-  resources :songs
+  resources :records do
+    resources :songs
+  end
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'

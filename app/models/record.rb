@@ -1,5 +1,6 @@
 class Record < ApplicationRecord
   belongs_to :user
+  has_many :songs
 
   validates :genre, :artist, :album, :year, :quantity, { presence: true }
 
