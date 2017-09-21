@@ -16,7 +16,9 @@
  *= require_tree .
  *= require_self
  */
-
+* {
+  font-family: "Times New Roman", Georgia, Serif;
+}
 
 body, header {
    margin-left: 20px;
