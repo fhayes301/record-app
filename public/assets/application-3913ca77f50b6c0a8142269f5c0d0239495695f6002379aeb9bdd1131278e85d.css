@@ -1,0 +1,176 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+
+ */
+
+
+
+body, header {
+   margin-left: 20px;
+   margin-right: 20px;
+   background-color: #536c8d;
+  }
+
+.container, header {
+    margin: 0 auto;
+    background-color: white;
+    max-width: 80%;
+    padding-left: 20px;
+    padding-right: 20px
+  }
+
+header {
+  margin-top: 10px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #62a07b;
+}
+
+nav {
+  padding-bottom: 5px;
+}
+
+.images {
+  display: inline-block;
+  width: auto;
+  }
+
+#records-header {
+  max-width: 43%;
+  max-height: 43%;
+  float: right;
+  padding-top: 15px;
+
+  }
+
+#wombat-header {
+  max-width: 38%;
+  max-height: 38%;
+  float: left;
+  padding-top: 15px;
+
+  }
+
+#logo {
+  max-width: 18%;
+  max-height: 18%;
+
+}
+
+.page {
+  padding-bottom: 20px;
+}
+
+th {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding-top: 10px;
+  margin-top: 0
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2}
+
+.add-thing {
+  background-color: #9d9394; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.form-container {
+   border: 1px solid #536c8d;
+   background: #4f8b89;
+   background: -o-linear-gradient(top, #62a07b, #4f8b89);
+   background-image: -ms-linear-gradient(top, #62a07b 0%, #4f8b89 100%);
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:20px;
+   width:300px;
+   }
+.form-field {
+   border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 4px;
+   color: #b8b1aa;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:8px;
+   margin-bottom:20px;
+   width:280px;
+   }
+.form-field:focus {
+   background: #fff;
+   color: #725129;
+   }
+.form-container h2 {
+   text-shadow: #6291ba 0 1px 0;
+   font-size:18px;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+    }
+.form-title {
+   margin-bottom:10px;
+   color: #062e63;
+   text-shadow: #6291ba 0 1px 0;
+   }
+.submit-container {
+   margin:8px 0;
+   text-align:right;
+   }
+.submit-button {
+   background-color: #9d9394; /* Green */
+   border: none;
+   color: white;
+   padding: 5px 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 10px;
+   border-radius: 8px;
+   }
+
+.submit-button:hover {
+   border: 0px solid #447314;
+   text-shadow: #31540c 0 1px 0;
+   background: #6aa436;
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   color: #fff;
+   }
+.submit-button:active {
+   text-shadow: #31540c 0 1px 0;
+   border: 0px solid #447314;
+   background: #8dc059;
+   background: -o-linear-gradient(top, #6aa436, #8dc059);
+   background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+   color: #fff;
+   }
