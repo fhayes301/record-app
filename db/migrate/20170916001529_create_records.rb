@@ -5,7 +5,7 @@ class CreateRecords < ActiveRecord::Migration[5.1]
       t.string :genre
       t.string :artist
       t.string :album
-      t.integer :year
+      t.string :year
       t.integer :quantity
 
       t.timestamps

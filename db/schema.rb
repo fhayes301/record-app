@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170920231720) do
     t.string "genre"
     t.string "artist"
     t.string "album"
-    t.integer "year"
+    t.string "year"
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
