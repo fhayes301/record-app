@@ -9,14 +9,15 @@
   <% if logged_in? %>
     <%= button_to "ADD A SONG", new_record_song_path(@record), method: :get, class: "add-thing" %>
   <% end %>
+  <br>
 
   <% if @song.present? %>
-  <h2> Album Songs: <h2>
+
   <div style = "overflow-x:auto;">
     <table class="sortable">
       <tr>
         <th></th>
-        <th>Title</th>
+        <th>Songs</th>
         <th></th>
         <th></th>
         <th></th>
