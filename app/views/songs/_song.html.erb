@@ -5,8 +5,8 @@
   <td></td>
   <td><%= song.title %></td>
   <% if logged_in? %>
-    <td><%= button_to "Edit", edit_record_song_path(@record, song), method: :get %></td>
-    <td><%= button_to "Delete", record_song_path(@record, song),
+    <td><%= button_to "Edit", edit_song_path(song), method: :get %></td>
+    <td><%= button_to "Delete", song_path(song),
             method: :delete,
             data: { confirm: 'Are you sure?' } %> </td>
   <% end %>

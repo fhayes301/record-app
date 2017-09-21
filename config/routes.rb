@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     resources :songs
   end
 
+  resources :songs
+
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'

@@ -5,6 +5,8 @@ class SongsController < ApplicationController
   end
 
   def show
+    @record = Record.find(params[:record_id])
+    @song = @record.songs
   end
 
   def new
@@ -24,25 +26,25 @@ class SongsController < ApplicationController
   end
 
   def edit
-    @record = Record.find(params[:record_id])
     @song = Song.find(params[:id])
   end
 
   def update
-    @record = Record.find(params[:record_id])
+    p params
     @song = Song.find(params[:id])
 
     if @song.update(song_params)
-      redirect_to record_songs_path(@record)
+      redirect_to record_songs_path(@song.record_id)
     else
+      p @song.errors.full_messages
       render :edit
     end
   end
 
   def destroy
-    @record = Record.find(params[:record_id])
-    @record.destroy
-    redirect_to record_songs_path(@record)
+    @song = Song.find(params[:id])
+    @song.destroy
+    redirect_to record_songs_path(@song.record_id)
   end
 
   private
