@@ -5,7 +5,8 @@ class Record < ApplicationRecord
   validates :genre, :artist, :album, :year, :quantity, { presence: true }
 
   def self.search(search)
-    where('genre LIKE :search OR artist LIKE :search OR album LIKE :search', search:"%#{search}%")
+    mysearch = search.capitalize
+    where('genre LIKE :search OR artist LIKE :search OR album LIKE :search', search:"%#{mysearch}%")
   end
 
 end
