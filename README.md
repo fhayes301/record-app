@@ -1,6 +1,6 @@
 ## Record application
 
-The purpose of this application is to allow users to keep track of their record collection.
+### The purpose of this application is to allow users to keep track of their record collection.
 
 ![Application Screenshot](app/assets/images/ApplicationScreenShot.png)
 
